@@ -24,7 +24,7 @@ SECRET_KEY = 'iq^8edov)*$#1ib--ln7fa2&9b934^f4mhcmh%2*h4dblkz2nc'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['sainistabilizers.herokuapp.com','127.0.0.1']
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
