@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% block title %}
+        {% endblock %}
+
+    </title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'Style/css/all.min.css' %}">
+
+    <!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="{% static 'engine1/style.css' %}" />
+<script type="text/javascript" src="{% static 'engine1/jquery.js' %}"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" 
+rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" 
+crossorigin="anonymous">
+
+<body>
+
+<div id="backdrop"></div>
+  <div id="c1">
+    <a href="{% url 'home' %}"><img id="i1" src="{% static 'Image/logo.jpeg' %}"></a>
+      <a href="{% url 'about_us' %}"><button id='b1'>ABOUT US</button></a>
+      <div id='dropdown'>
+      <button id='b2'>PRODUCTS</button>
+      <div id="o">
+         <div id="o1">
+          <a href="{% url 'power' %}"><img src="{% static 'Image/a.png' %}"><br>
+           Power Backup Solutions</a>
+          </div>
+         <div id="o1">
+          <a href="{% url 'voltage' %}"><img src="{% static 'Image/b.png' %}"><br>
+           Voltage Stabilizers</a>
+          </div>
+         <div id="o1">
+          <a href="{% url 'solar' %}"><img src="{% static 'Image/c.png' %}"><br>
+           Solar Solutions</a>
+          </div>
+         <div id="o1">
+          <a href="{% url 'evehicle' %}"><img src="{% static 'Image/d.png' %}"><br>
+            E-Vehicle Chargers</a>
+          </div>
+        </div>
+      </div>
+      <a href="{% url 'home' %}#p2"><button id='b3'>CONTACT US </button></a>
+      <a href="{% url 'shop' %}"><button id='b4'>SHOP NOW</button></a>
+      <a href="{% url 'admin_login' %}"><button id='b8'>ADMIN LOGIN &nbsp<i class="fas fa-user-shield"></i></button></a>
+  </div>
+
+
+{% block content %}
+{% endblock %}
+<script src="{% static 'Script/JS.js' %}"> </script>
+</body>
+</html>

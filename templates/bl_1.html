@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Saini Stabilizers-About Us
+{% endblock %}
+
+{% block content %}
+{% load static %}
+<div style="background-color:#edece8;">  
+<img src="{% static 'Image/bl_7.jpg' %}" style="margin-left:auto;margin-right:auto;display:block;width:1345px">
+<div id="c5">
+    <p style="font-weight: bold;text-align: center;font-size: x-large;"> What's the Difference Between UPS and Inverter?</p>
+    Both Uninterruptible Power Supplies (UPS) and power inverters are used to supply electricity and are often confused with each other. The best way to comprehend the difference between UPS and an inverter is by first understanding how they work.
+<br>
+<br>
+<b>What is an inverter?</b>
+<br>
+An inverter is intended to provide uninterrupted power for household electrical devices to operate. These home inverters are available in various voltages and load capacities. However, when discussing the difference between inverter and UPS, it is necessary to understand that an additional DC (battery) source is included with such power backup systems to store the converted energy. Another point to note is that an inverter works inversely to convert the AC supply into DC current during mains ON, which helps charge the battery. Since the battery is attached externally to the inverter, higher capacity batteries typically between 100Ah-200Ah are used, which supply 2hrs to 5hrs of power backup. Also, during Mains Power Off, it takes about 10-20 ms for inverter relays to switch over from mains power to battery supplied power. Even this small delay of 10-20 ms is not appreciated in the banking sector, where lakhs of transactions occur each second, hospitals where people on life support systems need constant oxygen supply, and homes where computers or other sophisticated appliances are used.
+To remove such obstacles, UPS comes into the picture.
+<br>
+<br>
+<b>What is UPS (Uninterruptable Power Supply)?</b>
+<br>
+UPS is a device that supplies energy to load in case of a power failure, like an inverter. 
+A low capacity UPS with a capacity upto 1.5 KVA has an inbuilt battery of about 5 Ah to 10 Ah,
+ which provides 15-30 minutes of power backup during a power outage. High capacity systems have 
+ batteries external to the UPS, but functioning depends on UPS type.<br>
+  UPS are primarily of 3 variants basis their working:
+<br>
+<br>
+<b>a) Online UPS</b>
+<br>
+Online UPS is a UPS type that supplies power to the AC load in normal 
+operation and uses an inverter to provide AC power during a power failure.
+ In Online UPS, the output power supply always stays ON i.e. the UPS keeps charging the battery 
+ and draws current from the battery to supply the load. Hence, there is no switching and, therefore, 
+ no time delay in switching between its sources. There is no disruption in the case of a power failure, 
+ even for a nanosecond. In case of a power failure, the UPS stops 
+ charging the battery but keeps driving a load from the inverter battery.
+  Therefore, Online UPS has a zero time delay when switching its power source. 
+  It is also known as Online UPS because it stays ON even during its normal operation.
+<br>
+<b>Pros</b>
+<br>
+1)Zero time delay in switching <br>
+2)has high-performance output because it protects the output load from input voltage spike and distortion
+<br>
+<b>Cons</b>
+<br>
+1)It requires large heat sinks because of the high operating temperature<br>
+2)The components used must have the tolerance to withstand high temperature <br>
+3)It is expensive than Offline UPS
+<br><br>
+<b>b) Offline UPS</b>
+<br>
+Offline UPS is a type of UPS that directly supplies power to the AC load from AC mains in normal operation and uses an inverter to power the AC load from the DC battery. Since there are two separate supplies, the output supply must be switched between the two sources. The switching time of an offline UPS varies from 6 ms to 10 ms, sufficient to run computers and other sensitive appliances at home but not suited for banks or hospitals, as explained earlier. During mains OFF condition, the battery stops charging, and the relay or static switch transfers the output line to the inverter side very quickly. Simultaneously, the inverter starts drawing current from the battery, which is then supplied to the AC load. Since it stays off when it draws current from the AC line during normal operation, it is known as Offline UPS
+<br>
+<b>Pros</b>
+<br>
+1)It is more efficient and reliable because it mostly stays off.<br>
+2)It requires smaller heat sinks because of low operating temperature due to its off state mostly. <br>
+3)It is cheaper than Online UPS.<br>
+<b>Cons</b>
+<br>
+1)There is a time delay in switching from mains mode to UPS mode <br>
+2)Its performance reduces with the input voltage distortion, which is directly connected to the load.<br>
+<br>
+<b>c) Line Interactive UPS</b>
+<br>
+Line-interactive UPS draws its features both from Online and Offline UPS. For line-interactive UPS, the inverter is part of the output. While the AC input is usual, the inverter will work in reverse to charge the battery and turn to battery power when the input fails.
+
+The switching time is lower than Offline UPS and is generally around 5 ms. Internal components provide filtering and voltage regulation. A wide variety of input voltage variations is provided by line-interactive UPS systems before switching to battery backup. In areas where outages are uncommon, this technology is especially successful, but power fluctuations are normal.
+<br>
+<b>Pros</b>
+<br>
+1)Switching time lower than Offline UPS<br>
+2)Internal components provide filtering and voltage regulation
+<br>
+<b>Cons</b><br>
+
+1)- Expensive than Offline but cheaper than Online UPS
+<br><br>
+
+<b>Combining UPS and Inverters</b>
+<br>
+You need to consider your requirements after knowing all the differences between UPS and inverter, and then choose. An office with a lot of computers and communication equipment, for instance, typically requires an Offline or line-interactive UPS power. On the other side, a bank or a hospital may require an Online UPS. A home that uses only ventilation and lighting may use an inverter, which provides an extended power backup for hours. You can decide the best configuration possible with a professional evaluation of your house.
+<br><br>
+However, as UPS units are more costly, it does not make sense to size them with no power supply for hours of operation. A better solution is to select an inverter that can be used as UPS or vice versa. All Luminous inverters are equipped with ECO and UPS mode, which turns the inverter to an Offline UPS if computers or sensitive appliances are used. Also, Luminous offers Pure Sine wave inverters that provide grid-like power to the load in case of an electrical supply failure. Inverter battery combo turns out to be long-running, with little maintenance, and is more rugged as compared to UPS.
+<br><br>
+We hope you have understood the difference between UPS and inverter and figured out which power system is perfect 
+for your needs. This article has covered the differences between UPS and inverter 
+in terms of switching times and back up time requirement, which you need to keep in 
+mind while selecting a power backup solution for your home or office. 
+</div>
+</div>
+{% endblock %}

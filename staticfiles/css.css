@@ -1,0 +1,356 @@
+*{
+margin : 0;
+padding : 0;
+font : sans_serif;
+box-sizing : border-box;
+outline : none;
+
+}
+a:link{
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+button{
+    border : none;
+    cursor : pointer;
+    outline : none;
+}
+button:focus {
+    outline:none !important;
+}
+
+#c1{
+    border : 1px solid grey;
+    width : 1345px;
+    height : 150px;
+    margin : 0 auto;
+    z-index : 1;
+
+}
+#b1{
+position : absolute;
+padding : 5px 10px 5px 10px;
+margin : 60px 450px;
+background-color : white;
+font-size : 18px;
+color : black;
+}
+#b1:hover,#b2:hover,#b3:hover,#b8:hover{
+    
+    font-weight:bolder;
+}
+#b2{
+position : absolute;
+padding : 5px 10px 5px 10px;
+margin : 42px 600px;
+background-color : white;
+font-size : 18px;
+color : black;
+}
+#b3{
+position : absolute;
+padding : 5px 10px 5px 10px;
+margin : 60px 750px;
+background-color : white;
+font-size : 18px;
+color : black;
+}
+#b4{
+position : absolute;
+padding : 5px 10px 5px 10px;
+margin : 60px 940px;
+background-color : black;
+font-size : 18px;
+color : white;
+}
+#b8{
+    position : absolute;
+    padding : 5px 10px 5px 10px;
+    margin : 60px 1100px;
+    background-color : white;
+    font-size : 18px;
+    color : black;
+    }
+#fa1{
+position : absolute;
+margin : 60px 1150px;
+color : black;
+}
+#fa2{
+position : absolute;
+margin : 60px 1250px;
+color : black;
+}
+#i1{
+    position : absolute;
+    margin : 50px 0px 0px 20px;
+}
+#p1,#p2{
+    width: 1345px;
+    height : auto;
+    margin : 0 auto;
+    font-weight: bolder;
+    text-align: center;
+    font-size: x-large;
+    background-color: black;
+    color: white;
+    margin-top: 10px;
+}
+#c2{
+    width : 1345px;
+    height : auto;
+    margin : 0 auto;
+    display: flex;
+    flex-direction :row;
+    justify-content:flex-start;
+    font-size:large;
+}
+#child1,#child2{
+    width: 280px;
+    height : 100px;
+    margin: 30px;
+    text-align: center;
+    border : 1px solid gray;
+    padding: 30px 0px 0px 10px;
+}
+
+#k1{
+    width : 1345px;
+}
+#r1{
+    margin : 0 auto;}
+
+#c3{
+    width : 1345px;
+    height : auto;
+    margin : 0 auto;
+    display: flex;
+    flex-direction :row;
+    justify-content:space-evenly;
+    font-size:large;
+}    
+#child3,#child4{
+
+    width: 532px;
+    height : auto;
+    margin : 30px;
+    text-align: center;
+    border : 1px solid black;
+}
+#o{
+    position : absolute;
+    border : 1px solid gray;
+    display : none;
+    flex-direction : row;
+    width : 1345px;
+    height : auto;
+    justify-content:space-evenly;
+    font-size:large;
+    margin-top : 80px;
+    z-index:100;
+    background-color: white;
+    }
+
+#dropdown:hover #o{
+     display : flex;
+ } 
+ #dropdown:hover #o1{
+    display : flex;
+}
+#o1{
+    width : 300px;
+    height : auto;
+    margin : 10px 0px 10px 0px;
+    padding : 10px 0px 10px 80px;
+    text-align: center;
+}   
+#o1 a{
+    text-decoration: none;
+    color : black;
+} 
+#o1 a:hover{
+    font-weight : bolder;
+}
+#dropdown{
+    position : relative;
+    display : inline-block;
+}
+
+#child5{
+    width: 673px;
+    height : auto;
+    padding: 0px 5px 0px 5px;
+    text-align: center;
+    border:1px solid black;
+    color: white;
+    background-color: black;
+}
+#child6{
+    width: auto;
+    height : auto;
+    border : 1px solid black;
+    text-align: center;
+}
+#child51{
+    width: 673px;
+    height : 400px;
+    padding: 0px 5px 0px 5px;
+    text-align: center;
+    border:1px solid black;
+    color: white;
+    background-color: black;
+}
+#child61{
+    width: 673px;
+    height : 400px;
+    border : 1px solid black;
+    text-align: center;
+}
+#child7{
+    width: 430px;
+    height : auto;
+    margin: 20px;
+    border : 1px solid gray;
+    padding : 5px 5px 5px 5px;
+}
+#child3 a, #child4 a{
+    text-decoration: none;
+    color : black;
+}
+#child3 b:hover, #child4 b:hover{
+    text-decoration: underline;
+}
+#b5{
+    background-color: white;
+}
+#b5:hover{
+    font-weight :  bolder;
+}
+
+
+.c4{
+    display : flex;
+    flex-direction: row;
+    position : absolute;
+    margin-left  : 1150px;
+    margin-top : 35px;
+    width : 200px;
+    font-size: 18px;
+    outline : none;
+
+    
+}
+.temperature{
+    padding : 5px 0px 0px 10px;
+    color :black;
+}
+.location{
+    padding : 5px 0px 0px 10px;
+    color :black;
+} 
+#c5{
+position : relative;
+height : auto;
+width : 900px;
+margin : -450px auto 0px auto; 
+z-index : 1000;
+background-color: white;
+padding : 10px 10px 10px 10px;
+
+}
+
+#b6{
+ color : white;
+ background-color: black;
+ padding : 10px 10px 10px 10px;
+ border-radius: 10px;
+ margin-left : 200px;
+ margin-bottom : 20px;
+}
+#c6{
+    width : 1345px;
+    height : auto;
+    margin : 0px auto;
+    font-size: large;
+    display: flex;
+    flex-direction :row;
+    justify-content:space-evenly;
+    
+}
+#child10{
+    width: 630px;
+    height : auto;
+    padding-left : 10px;
+}
+#container42{
+    position : absolute;
+    border : 1px solid black;
+    z-index : 999;
+    width : 40%;
+    height : 30%;
+    top : 30%;
+    left : 30%;
+    background-color : white;
+    color : black;
+    border-radius : 10px;
+    display : none;
+    margin : 0 auto;
+    }
+    #container42.visible
+    {
+     display:block;
+     animation:fade-slide-in 0.3s ease-out forwards;
+}
+
+   
+#backdrop1 {
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	background:  rgba(0, 0, 0, 0.85);
+	z-index: 500;
+	display: none;
+ }
+
+#backdrop1.visible {
+	display: block;
+}
+#h42{
+    padding : 5px 10px 5px 10px;
+    margin-top : 40px;
+    text-align : justify;
+    }
+#b42{
+    position : relative;
+    margin : 20px 0px 0px 230px ;
+    padding : 5px 10px 5px 10px;
+    color : white;
+    background-color : black;
+    border-radius : 5px;
+    }
+
+#container9{
+    border : 1px solid black;
+    width : 700px;
+    height : auto;
+    margin : 0 auto;
+    padding : 10px 10px 10px 10px;
+}
+#c10{
+    width : 1345px;
+    height : auto;
+    margin : 0 auto;
+}  
+#b11{
+     background-color:black;
+     color:white; 
+     padding:5px 10px 5px 10px;
+     border-radius : 10px;
+
+}

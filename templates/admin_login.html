@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}
+ADMIN-LOGIN
+{% endblock %}
+
+{% block content %}
+<br><br>
+<div id="container9">
+<form method="POST" action="{% url 'admin_login1' %}">
+    <br>
+<b>Enter your Username:</b>
+<input type='text' name="Username" size="60" required >
+<br><br>
+<b>Enter your Password:</b>
+<input type='text' name="password" size="20" required>
+<br><br>
+<input type="submit" style="background-color:black; color:white; padding:5px 10px 5px 10px;border-radius: 10px;" value="Login">
+
+</form><br>
+<a href="{% url 'home' %}"><button id="b11">Cancel</button></a>
+<a id="l9" href="{% url 'add_admin' %}">Add new Admin</a>
+</div>
+
+{% endblock %}

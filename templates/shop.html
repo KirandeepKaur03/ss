@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Saini Stabilizers-Shop now
+{% endblock %}
+
+{% block content %}
+{% load static %}
+<div id="c3">
+    <div id="child5">
+        <p style="font-weight: bold;font-size: larger;"> <br>SHOP ONLINE <br><br></p>
+            <p style="text-align: justify;">
+                Shop with us at the best prices and we will get all 
+                products delivered with easy installation at your home. 
+                Visit us and check out our latest offers and deals.
+    
+         </p>
+        </div>
+        <div id="child6">
+            <img src="{% static 'Image/sh_1.jpg' %}" >
+        </div>
+</div>
+<div id="c3">
+    <div id="child3">
+        <img src="{% static 'Image/sh_2.jpg' %}" width="530px" height="378px" >
+        <p style="font-weight: bold;font-size: larger;background-color: black;color:white;">POWER BACKUP SOLUTIONS</p>
+        <a href="{% url 'sel_power' %}"><button style="background-color: black;color:white;padding:5px 5px 5px 5px;font-weight:bolder;border-radius: 10px;">BUY NOW</button></a>
+        <br><br>
+    </div>
+    
+    <div id="child4">
+        <img src="{% static 'Image/sh_3.jpg' %}" width="530px" height="378px">
+        <p style="font-weight: bold;font-size: larger;background-color: black;color:white;">VOLTAGE STABILIZERS</p>
+        <a href="{% url 'sel_voltage' %}"><button style="background-color: black;color:white;padding:5px 5px 5px 5px;font-weight:bolder;border-radius: 10px;">BUY NOW</button></a>
+        <br><br>
+    </div>
+</div>
+
+<div id="c3">
+    <div id="child3">
+        <img src="{% static 'Image/sh_4.jpg' %}" width="530px" height="378px" >
+        <p style="font-weight: bold;font-size: larger;background-color: black;color:white;">SOLAR SOLUTIONS</p>
+        <a href="{% url 'sel_solar' %}"><button style="background-color: black;color:white;padding:5px 5px 5px 5px;font-weight:bolder;border-radius: 10px;">BUY NOW</button></a>
+        <br><br>
+    </div>
+    
+    <div id="child4">
+        <img src="{% static 'Image/sh_5.jpg' %}" width="530px" height="378px">
+        <p style="font-weight: bold;font-size: larger;background-color: black;color:white;">E-VEHICLE CHARGERS</p>
+        <a href="{% url 'sel_evehicle' %}"><button style="background-color: black;color:white;padding:5px 5px 5px 5px;font-weight:bolder;border-radius: 10px;">BUY NOW</button></a> 
+        <br><br>
+    </div>
+</div>
+<br>
+{% endblock %}    

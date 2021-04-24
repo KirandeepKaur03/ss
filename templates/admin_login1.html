@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}
+ADMIN-LOGIN
+{% endblock %}
+
+{% block content %}
+<div id='c10'>
+<p style="font-weight: bold;text-align: center;font-size: x-large;background-color:black;color:white;">Hello Admin..Welcome Back 
+</p>
+<a href ="{% url 'admin_logout' %}" class = "btn btn-warning s1">Logout</a>  
+<br>
+
+<a href="{% url 'queries' %}"><input type="submit" value="Check all the Queries" class="btn btn-warning ml-3 mt-3"></a>
+</div>
+
+
+
+
+
+
+
+{% endblock %}
